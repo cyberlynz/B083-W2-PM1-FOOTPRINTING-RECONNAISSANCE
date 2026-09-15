@@ -1,0 +1,5 @@
+Reference finding from the supplied NetworkWalks PDF:
+
+- networkwalks.com resolves to 192.232.216.135 in the example.
+
+The assignment explains that resolving the domain to an IP helps map the target infrastructure.
