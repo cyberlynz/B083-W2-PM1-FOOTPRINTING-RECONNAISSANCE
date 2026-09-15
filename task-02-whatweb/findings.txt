@@ -1,8 +1,0 @@
-Reference findings from the supplied NetworkWalks PDF:
-
-- Web server: Apache
-- CMS: WordPress 7.0.4
-- Plugin: WP Download Manager 3.3.58
-- The output also exposes the server IP and an email address.
-
-Note: These are findings shown in the training material, not independently verified in this repository.
