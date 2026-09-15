@@ -1,0 +1,6 @@
+PLACEHOLDER
+
+Run:
+nslookup networkwalks.com
+
+Paste the complete Kali Linux terminal output here.
