@@ -1,6 +1,9 @@
-PLACEHOLDER
+┌──(kali㉿kali)-[~]
+└─$ nslookup networkwalks.com       
+;; communications error to 8.8.8.8#53: timed out
+Server:         8.8.8.8
+Address:        8.8.8.8#53
 
-Run:
-nslookup networkwalks.com
-
-Paste the complete Kali Linux terminal output here.
+Non-authoritative answer:
+Name:   networkwalks.com
+Address: 192.232.216.135
