@@ -29,13 +29,15 @@ The assessment uses Kali Linux to gather publicly available information about **
 - Enumerate DNS records with `dnsrecon`.
 - Preserve terminal output and screenshot evidence for each task.
 
-## 📚 Tasks & Evidence
+## 📚 Tasks, Results & Evidence
 
 ### 01 — WHOIS
 
 ```bash
 whois networkwalks.com
 ```
+
+**Result:** WHOIS returned domain registration details including GoDaddy as the registrar, registration/expiry dates, domain status, and nameservers. The registrant information was privacy-protected.
 
 ![WHOIS](whois-screenshot.png)
 
@@ -49,6 +51,8 @@ whois networkwalks.com
 whatweb networkwalks.com
 ```
 
+**Result:** WhatWeb identified Apache, WordPress 7.1, WordPress Download Manager, Bootstrap, jQuery, Google Tag Manager, and other web technologies. The HTTP version redirected to HTTPS, which returned `200 OK`.
+
 ![WhatWeb](whatweb-screenshot.png)
 
 [Task documentation](task-02-whatweb/README.md) · [Command output](task-02-whatweb/output.txt)
@@ -60,6 +64,8 @@ whatweb networkwalks.com
 ```bash
 nslookup networkwalks.com
 ```
+
+**Result:** The lookup resolved `networkwalks.com` to **192.232.216.135**. The query also showed a timeout communicating with the configured DNS server at `8.8.8.8`, but a non-authoritative answer was still returned.
 
 ![NSLookup](nslookup-screenshot.png)
 
@@ -73,6 +79,8 @@ nslookup networkwalks.com
 curl -I https://networkwalks.com
 ```
 
+**Result:** The server returned **HTTP/2 200 OK**. The headers revealed Apache as the server, WordPress-related endpoints and cookies, content type information, caching headers, and security-related policies.
+
 ![cURL](curl-screenshot.png)
 
 [Task documentation](task-04-curl/README.md) · [Command output](task-04-curl/output.txt)
@@ -84,6 +92,8 @@ curl -I https://networkwalks.com
 ```bash
 wafw00f networkwalks.com
 ```
+
+**Result:** Wafw00f identified **ModSecurity (SpiderLabs) WAF** protecting the website after two requests.
 
 ![Wafw00f](wafw00f-screenshot.png)
 
@@ -97,9 +107,21 @@ wafw00f networkwalks.com
 dnsrecon -d networkwalks.com
 ```
 
+**Result:** DNSRecon discovered SOA, NS, MX, A, and SRV records. It resolved the main domain to **192.232.216.135**, identified mail infrastructure, and found **8 SRV records**. The scan also reported no answer for the DNSSEC query.
+
 ![DNSRecon](dnsrecon-screenshot.png)
 
 [Task documentation](task-06-dnsrecon/README.md) · [Command output](task-06-dnsrecon/output.txt)
+
+## 🧠 What I Learned
+
+- I learned how **WHOIS** can be used to collect domain registration and nameserver information during passive reconnaissance.
+- I learned how **WhatWeb** helps identify technologies, frameworks, web servers, and other components exposed by a website.
+- I learned how **NSLookup** can be used to resolve a domain name to an IP address and observe DNS query behaviour.
+- I learned how **cURL** can reveal useful HTTP response headers and information about how a web server is configured.
+- I learned how **Wafw00f** can help identify whether a website is protected by a Web Application Firewall and which WAF may be in use.
+- I learned how **DNSRecon** can enumerate different DNS records and provide a broader view of a domain's DNS infrastructure.
+- Most importantly, I learned that combining multiple reconnaissance tools provides a more complete picture than relying on a single tool.
 
 ## ✅ Evidence Checklist
 
