@@ -2,11 +2,7 @@
 
 ## Requirement
 
-Query the public domain registration record to find who owns the domain, when it was registered, and its name servers.
-
-## Tool
-
-`whois`
+Query the public domain registration record to find registration details, dates and name servers.
 
 ## Command
 
@@ -14,25 +10,8 @@ Query the public domain registration record to find who owns the domain, when it
 whois networkwalks.com
 ```
 
-## What to Capture
+## Evidence
 
-- Registrar / registration information
-- Registration and expiry dates, where displayed
-- Name servers
-- Any other relevant public registration details returned by the command
+![WHOIS Screenshot](../whois-screenshot.png)
 
-## 📸 Screenshot Evidence
-
-**PLACEHOLDER — Add your Kali Linux terminal screenshot here.**
-
-Save the screenshot in this folder using a clear filename such as:
-
-`whois-screenshot.png`
-
-## 📝 Command Output
-
-Save the complete terminal output in:
-
-`output.txt`
-
-The `output.txt` file is intentionally left as a placeholder until the command is run in the Kali lab.
+Full command output: [`output.txt`](output.txt)
