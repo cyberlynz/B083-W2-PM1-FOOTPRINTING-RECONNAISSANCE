@@ -113,7 +113,7 @@ B083-W2-PM1-FOOTPRINTING-RECONNAISSANCE/
 whois networkwalks.com
 ```
 
-[View Task 1](whois-screenshot.png)
+![View Task 1](whois-screenshot.png)
 
 **📸 Screenshot:** Add your Kali terminal screenshot to `task-01-whois/screenshot/`.
 
