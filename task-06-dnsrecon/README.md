@@ -2,11 +2,7 @@
 
 ## Requirement
 
-Enumerate all DNS records: name servers, mail servers, SPF, TXT and service (SRV) records.
-
-## Tool
-
-`dnsrecon`
+Enumerate DNS records including name servers, mail servers, SPF, TXT and SRV records.
 
 ## Command
 
@@ -14,23 +10,8 @@ Enumerate all DNS records: name servers, mail servers, SPF, TXT and service (SRV
 dnsrecon -d networkwalks.com
 ```
 
-## What to Capture
+## Evidence
 
-Record the DNS information returned by DNSRecon, including:
+![DNSRecon Screenshot](../dnsrecon-screenshot.png)
 
-- Name server records
-- Mail server records
-- SPF information
-- TXT records
-- Service (SRV) records
-- Other DNS records returned by the command
-
-## 📸 Screenshot Evidence
-
-**PLACEHOLDER — Add your Kali Linux terminal screenshot here.**
-
-Suggested filename: `dnsrecon-screenshot.png`.
-
-## 📝 Command Output
-
-Save the complete terminal output in `output.txt`.
+Full command output: [`output.txt`](output.txt)
