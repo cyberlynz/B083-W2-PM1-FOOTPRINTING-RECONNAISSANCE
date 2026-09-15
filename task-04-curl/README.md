@@ -2,11 +2,7 @@
 
 ## Requirement
 
-Read the HTTP response headers to see the server banner, status, cookies and redirects.
-
-## Tool
-
-`curl`
+Inspect the HTTP response headers returned by the target.
 
 ## Command
 
@@ -14,16 +10,8 @@ Read the HTTP response headers to see the server banner, status, cookies and red
 curl -I https://networkwalks.com
 ```
 
-## What to Capture
+## Evidence
 
-Record the HTTP response headers returned by the target, including status information and relevant server, cookie, redirect or other header details shown by the command.
+![cURL Screenshot](../curl-screenshot.png)
 
-## 📸 Screenshot Evidence
-
-**PLACEHOLDER — Add your Kali Linux terminal screenshot here.**
-
-Suggested filename: `curl-screenshot.png`.
-
-## 📝 Command Output
-
-Save the complete terminal output in `output.txt`.
+Full command output: [`output.txt`](output.txt)
