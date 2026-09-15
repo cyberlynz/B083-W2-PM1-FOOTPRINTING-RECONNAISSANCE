@@ -1,0 +1,7 @@
+Reference findings from the supplied NetworkWalks PDF:
+
+- WHOIS is used to query the public domain registration record.
+- The output reveals registrar, registration date, expiry date, name servers and abuse contacts.
+- The assignment notes that the name servers point to HostGator.
+
+Note: This is a reference summary from the assignment. Replace/augment it with your own captured terminal output when completing the lab.
