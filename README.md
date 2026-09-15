@@ -138,10 +138,6 @@ dnsrecon -d networkwalks.com
 
 This project is for educational and authorised security testing only. Reconnaissance activities should be performed only against systems that are owned, provided for training, or explicitly authorised for testing.
 
-## 👤 Author
-
-**Collins**  
-NetworkWalks Cybersecurity & Ethical Hacking — Batch B083
 
 ## 📋 Project Information
 
