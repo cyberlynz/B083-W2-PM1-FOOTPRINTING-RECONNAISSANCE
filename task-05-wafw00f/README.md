@@ -4,26 +4,14 @@
 
 Detect whether a Web Application Firewall (WAF) is protecting the target site.
 
-## Tool
-
-`wafw00f`
-
 ## Command
 
 ```bash
 wafw00f networkwalks.com
 ```
 
-## What to Capture
+## Evidence
 
-Record whether a WAF is detected and the identification returned by Wafw00f, if available.
+![Wafw00f Screenshot](../wafw00f-screenshot.png)
 
-## 📸 Screenshot Evidence
-
-**PLACEHOLDER — Add your Kali Linux terminal screenshot here.**
-
-Suggested filename: `wafw00f-screenshot.png`.
-
-## 📝 Command Output
-
-Save the complete terminal output in `output.txt`.
+Full command output: [`output.txt`](output.txt)
