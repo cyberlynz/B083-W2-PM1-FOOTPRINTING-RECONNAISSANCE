@@ -15,225 +15,159 @@
 
 ## 📌 Project Overview
 
-This project documents practical **footprinting and reconnaissance** activities completed as part of the NetworkWalks Week 02 Project Module 1.
+This project documents practical **footprinting and reconnaissance** activities completed during NetworkWalks Week 02.
 
-The exercise focuses on collecting publicly available information about **networkwalks.com** using six Kali Linux reconnaissance tools. The assignment describes reconnaissance as the first stage of an ethical hacking or security assessment, where information about a target is gathered before later testing activities.
-
-The six tools required by the project are:
-
-- `whois` — domain registration details
-- `whatweb` — web technology fingerprinting
-- `nslookup` — DNS-to-IP resolution
-- `curl -I` — HTTP response headers
-- `wafw00f` — Web Application Firewall detection
-- `dnsrecon` — DNS record enumeration
-
-> **Important:** This repository is a record of an educational lab. Testing should only be performed against systems where permission has been granted or within an authorised training environment.
+The assessment uses Kali Linux to gather publicly available information about **networkwalks.com** with six reconnaissance tools.
 
 ## 🎯 Objectives
 
-- Query the public domain registration record using `whois`.
-- Fingerprint the website using `whatweb`.
-- Resolve the domain to its IP address using `nslookup`.
-- Inspect HTTP response headers using `curl -I`.
-- Detect a Web Application Firewall using `wafw00f`.
-- Enumerate DNS records using `dnsrecon`.
-- Save the command output for each task.
-- Capture and document a screenshot for each task.
+- Collect domain registration information with `whois`.
+- Identify web technologies with `whatweb`.
+- Resolve DNS information with `nslookup`.
+- Inspect HTTP headers with `curl -I`.
+- Detect WAF protection with `wafw00f`.
+- Enumerate DNS records with `dnsrecon`.
+- Preserve terminal output and screenshot evidence for each task.
 
-## 🧪 Target
+## 🧪 Target & Environment
 
 | Item | Details |
 |---|---|
-| Target domain | `networkwalks.com` |
+| Target | `networkwalks.com` |
 | Platform | Kali Linux |
-| Exercise | Footprinting & Reconnaissance Attacks with Multiple Kali Tools |
 | Week | 02 |
-| Project Module | 01 |
+| Project | W2-PM1 |
 | Batch | B083 |
 
-## 🗂️ Project Structure
+## 🗂️ Repository Structure
 
 ```text
 B083-W2-PM1-FOOTPRINTING-RECONNAISSANCE/
 │
 ├── README.md
+├── whois-screenshot.png
+├── whatweb-screenshot.png
+├── nslookup-screenshot.png
+├── curl-screenshot.png
+├── wafw00f-screenshot.png
+├── dnsrecon-screenshot.png
+│
 ├── task-01-whois/
 │   ├── README.md
-│   ├── command.txt
-│   ├── output.txt
-│   └── screenshot/
-│       └── README.md
+│   └── output.txt
 │
 ├── task-02-whatweb/
 │   ├── README.md
-│   ├── command.txt
-│   ├── output.txt
-│   └── screenshot/
-│       └── README.md
+│   └── output.txt
 │
 ├── task-03-nslookup/
 │   ├── README.md
-│   ├── command.txt
-│   ├── output.txt
-│   └── screenshot/
-│       └── README.md
+│   └── output.txt
 │
 ├── task-04-curl/
 │   ├── README.md
-│   ├── command.txt
-│   ├── output.txt
-│   └── screenshot/
-│       └── README.md
+│   └── output.txt
 │
 ├── task-05-wafw00f/
 │   ├── README.md
-│   ├── command.txt
-│   ├── output.txt
-│   └── screenshot/
-│       └── README.md
+│   └── output.txt
 │
 └── task-06-dnsrecon/
     ├── README.md
-    ├── command.txt
-    ├── output.txt
-    └── screenshot/
-        └── README.md
+    └── output.txt
 ```
 
-## 📚 Tasks
+## 📚 Tasks & Evidence
 
-### Task 1 — WHOIS
-
-**Requirement:** Query the public domain registration record to find who owns the domain, when it was registered, and its name servers.
-
-**Command:**
+### 01 — WHOIS
 
 ```bash
 whois networkwalks.com
 ```
 
-![View Task 1](whois-screenshot.png)
+![WHOIS](whois-screenshot.png)
 
-**📸 Screenshot:** Add your Kali terminal screenshot to `task-01-whois/screenshot/`.
+[Task documentation](task-01-whois/README.md) · [Command output](task-01-whois/output.txt)
 
 ---
 
-### Task 2 — WhatWeb
-
-**Requirement:** Fingerprint the technologies running on the website, including the web server, CMS, plugins, frameworks and IP address.
-
-**Command:**
+### 02 — WhatWeb
 
 ```bash
 whatweb networkwalks.com
 ```
 
-![View Task 2](whatweb-screenshot.png)
+![WhatWeb](whatweb-screenshot.png)
 
-**📸 Screenshot:** Add your Kali terminal screenshot to `task-02-whatweb/screenshot/`.
+[Task documentation](task-02-whatweb/README.md) · [Command output](task-02-whatweb/output.txt)
 
 ---
 
-### Task 3 — NSLookup
-
-**Requirement:** Resolve the domain name to its IP address using DNS.
-
-**Command:**
+### 03 — NSLookup
 
 ```bash
 nslookup networkwalks.com
 ```
 
-![View Task 3](nslookup-screenshot.png)
+![NSLookup](nslookup-screenshot.png)
 
-**📸 Screenshot:** Add your Kali terminal screenshot to `task-03-nslookup/screenshot/`.
+[Task documentation](task-03-nslookup/README.md) · [Command output](task-03-nslookup/output.txt)
 
 ---
 
-### Task 4 — cURL
-
-**Requirement:** Read the HTTP response headers to see the server banner, status, cookies and redirects.
-
-**Command:**
+### 04 — cURL
 
 ```bash
 curl -I https://networkwalks.com
 ```
 
-![View Task 4](curl-screenshot.png)
+![cURL](curl-screenshot.png)
 
-**📸 Screenshot:** Add your Kali terminal screenshot to `task-04-curl/screenshot/`.
+[Task documentation](task-04-curl/README.md) · [Command output](task-04-curl/output.txt)
 
 ---
 
-### Task 5 — Wafw00f
-
-**Requirement:** Detect whether a Web Application Firewall (WAF) is protecting the target site.
-
-**Command:**
+### 05 — Wafw00f
 
 ```bash
 wafw00f networkwalks.com
 ```
 
-![View Task 5](wafw00f-screenshot.png)
+![Wafw00f](wafw00f-screenshot.png)
 
-**📸 Screenshot:** Add your Kali terminal screenshot to `task-05-wafw00f/screenshot/`.
+[Task documentation](task-05-wafw00f/README.md) · [Command output](task-05-wafw00f/output.txt)
 
 ---
 
-### Task 6 — DNSRecon
-
-**Requirement:** Enumerate DNS records including name servers, mail servers, SPF, TXT and service (SRV) records.
-
-**Command:**
+### 06 — DNSRecon
 
 ```bash
 dnsrecon -d networkwalks.com
 ```
 
-![View Task 6](dnsrecon-screenshot.png)
+![DNSRecon](dnsrecon-screenshot.png)
 
-**📸 Screenshot:** Add your Kali terminal screenshot to `task-06-dnsrecon/screenshot/`.
+[Task documentation](task-06-dnsrecon/README.md) · [Command output](task-06-dnsrecon/output.txt)
 
-## 📸 Evidence Checklist
+## ✅ Evidence Checklist
 
-The NetworkWalks task instructions require a screenshot and saved output for every task.
-
-| Task | Tool | Command saved | Output saved | Screenshot |
-|---|---|---|---|---|
-| 01 | WHOIS | ✅ | ⏳ Add output | ⏳ Add screenshot |
-| 02 | WhatWeb | ✅ | ⏳ Add output | ⏳ Add screenshot |
-| 03 | NSLookup | ✅ | ⏳ Add output | ⏳ Add screenshot |
-| 04 | cURL | ✅ | ⏳ Add output | ⏳ Add screenshot |
-| 05 | Wafw00f | ✅ | ⏳ Add output | ⏳ Add screenshot |
-| 06 | DNSRecon | ✅ | ⏳ Add output | ⏳ Add screenshot |
-
-## 🧠 Why Footprinting Matters
-
-Reconnaissance helps build a profile of a target before later security testing. The assignment explains that `whois` and DNS tools can reveal domain ownership, IP addresses, hosting information and mail infrastructure, while `whatweb` and `curl` can help identify technologies and HTTP details. `wafw00f` can indicate whether a Web Application Firewall is present.
-
-The project also emphasizes that footprinting relies on information that is publicly available and that defenders can perform the same checks against their own infrastructure to understand what an outside observer can discover.
-
-## 📝 Evidence Submission Format
-
-For each task:
-
-1. Run the exact command provided in the assignment.
-2. Capture a clear screenshot showing the Kali terminal and command result.
-3. Save the complete terminal output in `output.txt`.
-4. Place the screenshot inside that task's `screenshot/` directory.
-5. Replace the screenshot placeholder documentation with the actual screenshot filename.
+| Task | Tool | Screenshot | Output |
+|---|---|---|---|
+| 01 | WHOIS | ✅ | ✅ |
+| 02 | WhatWeb | ✅ | ✅ |
+| 03 | NSLookup | ✅ | ✅ |
+| 04 | cURL | ✅ | ✅ |
+| 05 | Wafw00f | ✅ | ✅ |
+| 06 | DNSRecon | ✅ | ✅ |
 
 ## 🔒 Security & Ethical Use
 
-This project is for educational and authorised security testing purposes only. Do not use the techniques documented here against systems without permission. The NetworkWalks assignment itself states that hacking is legal only when testing a network or device you own, working in a lab environment, or operating under documented permission and an agreed scope.
+This project is for educational and authorised security testing only. Reconnaissance activities should be performed only against systems that are owned, provided for training, or explicitly authorised for testing.
 
 ## 👤 Author
 
 **Collins**  
-NetworkWalks Cybersecurity Internship — Batch B083
+NetworkWalks Cybersecurity & Ethical Hacking — Batch B083
 
 ## 📋 Project Information
 
@@ -246,7 +180,3 @@ NetworkWalks Cybersecurity Internship — Batch B083
 | Project Title | Footprinting & Reconnaissance Attacks with Multiple Kali Tools |
 | Target | `networkwalks.com` |
 | Author | Collins |
-
----
-
-> **Note:** This repository structure follows the documentation style of the Week 01 lab repository while keeping the Week 02 task requirements from the supplied NetworkWalks assignment as the source of truth.
