@@ -1,5 +1,0 @@
-Reference finding from the supplied NetworkWalks PDF:
-
-- Wafw00f detects ModSecurity (SpiderLabs) protecting the site.
-
-The assignment explains that identifying a WAF helps an assessor understand the defensive layer in front of the web application.
