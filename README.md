@@ -129,7 +129,7 @@ whois networkwalks.com
 whatweb networkwalks.com
 ```
 
-[View Task 2](whatweb-screenshot.png)
+![View Task 2](whatweb-screenshot.png)
 
 **📸 Screenshot:** Add your Kali terminal screenshot to `task-02-whatweb/screenshot/`.
 
@@ -145,7 +145,7 @@ whatweb networkwalks.com
 nslookup networkwalks.com
 ```
 
-[View Task 3](nslookup-screenshot.png)
+![View Task 3](nslookup-screenshot.png)
 
 **📸 Screenshot:** Add your Kali terminal screenshot to `task-03-nslookup/screenshot/`.
 
@@ -161,7 +161,7 @@ nslookup networkwalks.com
 curl -I https://networkwalks.com
 ```
 
-[View Task 4](curl-screenshot.png)
+![View Task 4](curl-screenshot.png)
 
 **📸 Screenshot:** Add your Kali terminal screenshot to `task-04-curl/screenshot/`.
 
@@ -177,7 +177,7 @@ curl -I https://networkwalks.com
 wafw00f networkwalks.com
 ```
 
-[View Task 5](wafw00f-screenshot.png)
+![View Task 5](wafw00f-screenshot.png)
 
 **📸 Screenshot:** Add your Kali terminal screenshot to `task-05-wafw00f/screenshot/`.
 
@@ -193,7 +193,7 @@ wafw00f networkwalks.com
 dnsrecon -d networkwalks.com
 ```
 
-[View Task 6](dnsrecon-screenshot.png)
+![View Task 6](dnsrecon-screenshot.png)
 
 **📸 Screenshot:** Add your Kali terminal screenshot to `task-06-dnsrecon/screenshot/`.
 
