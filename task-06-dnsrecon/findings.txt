@@ -1,8 +1,0 @@
-Reference findings from the supplied NetworkWalks PDF:
-
-- DNSRecon is used to enumerate the target's DNS footprint.
-- The assignment mentions mail servers, DNS software version, SPF policy and cPanel service records.
-- DNS software version shown: BIND 9.16.23
-- The task specifically asks for name servers, mail servers, SPF, TXT and SRV records.
-
-Note: The PDF does not provide a complete machine-readable record list, so missing record values are not invented here.
