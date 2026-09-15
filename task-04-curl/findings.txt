@@ -1,7 +1,0 @@
-Reference findings from the supplied NetworkWalks PDF:
-
-- The command is used to read HTTP response headers.
-- The headers show server information, status, cookies and redirects.
-- The example references the WordPress REST API endpoint: /wp-json/
-
-Note: The PDF does not provide a complete machine-readable header dump, so this file intentionally does not invent missing header values.
